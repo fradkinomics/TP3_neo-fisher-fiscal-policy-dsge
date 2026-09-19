@@ -1,0 +1,13 @@
+# Dynare / MATLAB autogenerados (se regeneran corriendo los .mod)
+code/+*/
+code/*/
+*.log
+*.asv
+
+# Paquete de replicacion de Uribe (muy pesado; publico; NO va al repo)
+literature/replication_uribe_neo_fisher/
+literature/replication_uribe_neo_fisher.zip
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
