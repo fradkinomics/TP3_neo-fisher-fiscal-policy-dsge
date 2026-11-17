@@ -28,7 +28,7 @@ hRec = plot(fecha, nivel,    '-', 'Color',[0.11 0.35 0.85], 'LineWidth',2.4);
 yline(0,'-','Color',[.7 .7 .7]); grid on; xlim([fecha(1) fecha(end)]);
 set(gca,'GridColor',gcol,'GridAlpha',1,'Layer','top','FontSize',10,'TickLabelInterpreter','latex');
 ylabel('\% anual','Interpreter','latex','FontSize',12);
-lg=legend([hObs hRec],{'$\pi_t$ observada','$\pi_t$ suavizada (moda E7)'}, ...
+lg=legend([hObs hRec],{'$\pi_t$ observada','$\pi_t$ suavizada (moda mc5)'}, ...
           'Interpreter','latex','Location','northeast','FontSize',10); lg.Box='on';
-exportgraphics(f1, fullfile(outdir,'E10_infl_nivel_B.pdf'), 'ContentType','vector');
+exportgraphics(f1, fullfile(outdir,'E10_infl_nivel_B_v2.pdf'), 'ContentType','vector');
 disp('--- E10: figura guardada en output/E10_infl_nivel_B.pdf ---');

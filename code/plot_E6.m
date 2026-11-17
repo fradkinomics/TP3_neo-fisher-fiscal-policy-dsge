@@ -38,7 +38,7 @@ end
 yline(0,'-','Color',[.7 .7 .7]); grid on; xlim([fecha(1) fecha(end)]);
 set(gca,'GridColor',gcol,'GridAlpha',1,'Layer','top','FontSize',10,'TickLabelInterpreter','latex');
 ylabel('\% anual','Interpreter','latex','FontSize',12);
-lg=legend([hObs hL],{'$\pi_t$ observada','moda mc=5','moda mc=6','media MH'}, ...
+lg=legend([hObs hL],{'$\pi_t$ observada','moda mc5','moda mc6','media MH'}, ...
           'Interpreter','latex','Location','northeast','FontSize',10); lg.Box='on';
-exportgraphics(f1, fullfile(outdir,'E6_infl_nivel_A.pdf'), 'ContentType','vector');
+exportgraphics(f1, fullfile(outdir,'E6_infl_nivel_A_v2.pdf'), 'ContentType','vector');
 disp('--- E6: figura guardada en output/E6_infl_nivel_A.pdf ---');
