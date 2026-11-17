@@ -5,9 +5,6 @@ Réplica y estimación bayesiana del modelo Nuevo Keynesiano de **Uribe (2022, s
 transitorio muy persistente `z^{m2}`, `ρ=0.999`). Cubre IRFs, descomposición de varianza y suavizado de
 la inflación.
 
-> **Detalle completo de decisiones metodológicas, hallazgos y prompt de arranque para IA:** ver
-> [`Registro_TP3_macrometrics.md`](Registro_TP3_macrometrics.md).
-
 ---
 
 ## Requisitos
@@ -30,14 +27,13 @@ la inflación.
 ## Estructura
 
 ```
-TP3_macrometrics/
+TP3_neo-fisher-fiscal-policy-dsge/
 ├─ code/        scripts .m y modelos .mod
 ├─ data/        Datos.xlsx (insumo de estimación) + .mat generados
 ├─ data_raw/    Excel crudos de Uribe (gdplev, LNU, fedfunds)
 ├─ output/      figuras y tablas que van al PDF (entregables)
 ├─ tools/       utilidades de la cátedra (estilo de gráficos, smoother)
 ├─ literature/  papers + consigna
-└─ Registro_TP3_macrometrics.md   bitácora completa del trabajo
 ```
 
 ---
@@ -91,7 +87,7 @@ La serie de inflación nivel (ancla de E6) la genera `build_infl_obs.m` → `dat
 El paquete de replicación original de Uribe (`literature/replication_uribe_neo_fisher/`, ~195 MB) **no
 está en este repo** por exceder el límite de tamaño de GitHub. Es público: se consigue en el sitio del
 autor / repositorio de la AEA (*The Neo-Fisher Effect: Econometric Evidence…*, AEJ: Macroeconomics 2022).
-No es necesario para reproducir la corrida (todo el código Dynak está en `code/`); sirve solo como
+No es necesario para reproducir la corrida (todo el código Dynare está en `code/`); sirve solo como
 referencia de las ecuaciones y el steady state.
 
 ## Créditos
